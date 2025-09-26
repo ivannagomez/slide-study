@@ -21,31 +21,17 @@ function App() {
       <header className="App-header">
         <h1>Infinite Scroll Demo</h1>
 
-        <div style={{ display: 'flex', gap: '3rem', marginTop: '2rem' }}>
-          <div>
-            <h3>Default Scroll</h3>
-            <InfiniteScroll
-              items={items}
-              width="25rem"
-              maxHeight="500px"
-            />
-          </div>
-
-          <div>
-            <h3>Tilted with Autoplay</h3>
-            <InfiniteScroll
-              items={items}
-              width="25rem"
-              maxHeight="500px"
-              isTilted={true}
-              tiltDirection="left"
-              autoplay={true}
-              autoplaySpeed={0.5}
-              autoplayDirection="down"
-              pauseOnHover={true}
-            />
-          </div>
-        </div>
+        <InfiniteScroll
+          items={items}
+          width="25rem"
+          maxHeight="500px"
+          isTilted={true}
+          tiltDirection="left"
+          autoplay={true}
+          autoplaySpeed={0.5}
+          autoplayDirection="down"
+          pauseOnHover={true}
+        />
 
         <p style={{ marginTop: '2rem', fontSize: '0.9rem' }}>
           Try scrolling, dragging, or using your mouse wheel!
